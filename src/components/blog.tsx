@@ -40,7 +40,7 @@ const Blog = () => {
 
     <div className="blog-content">
         {blogPosts().map((blog, index) => (
-            <div className="main">
+            <div className="main" key={index}>
                 <Image src={blog.image} alt="" layout="responsive" width={800} height={550} />
                 <div className="blog-text">
                     <h6>{blog.date}</h6>
